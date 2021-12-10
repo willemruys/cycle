@@ -8,4 +8,5 @@ Please note that all npm commands need to be run from the project *root director
 ```
 REACT_APP_MAPBOX_GL=<token of mapbox_gl>
 ```
-4. Run the application: `npm run start`. This will start both the server and the React application.
+4. Add a cycle_ride.fit file to root directory;
+5. Run the application: `npm run start`. This will start both the server and the React application.
