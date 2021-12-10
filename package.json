@@ -1,0 +1,19 @@
+{
+  "name": "cycle",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "server": "npm start --prefix server",
+    "frontend": "npm start --prefix frontend",
+    "setup:frontend": "npm install --prefix frontend && npm run build --prefix frontend",
+    "setup:server": "npm install --prefix server",
+    "build": "concurrently \"npm run setup:frontend\" \"npm run setup:server\"",
+    "start": "concurrently \"npm run server\" \"npm run frontend\""
+  },
+  "author": "Willem Ruys",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^6.4.0"
+  }
+}
